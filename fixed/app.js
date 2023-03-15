@@ -16,6 +16,7 @@ const searchFood = () => {
 
 const displayMealInfo = mealData => {
     const mealContainer = document.getElementById('mealCard');
+    mealContainer.innerHTML=``;
     mealData.forEach(item => {
         const foodItemName = document.createElement('div');
         foodItemName.className = 'meal-items';
